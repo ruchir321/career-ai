@@ -1,6 +1,16 @@
 # Career-ai
 
-A LLM app personalized to my job application history.
+A RAG app personalized to my job application history.
+
+## Completed
+
+RAG for past job descriptions. LLM model can give generic advice with context of documents
+
+## WIP
+
+Add "target job application upload" dropbox
+
+Add resume suggestion inference
 
 ## How to use
 
@@ -55,13 +65,32 @@ As a user I would like to:
 
 Streamlit app
 
-UI will have dropbox for:
+UI will have:
 
-1. user resume draft
-2. job tracker spreadsheet
-3. job application folder
+1. User query input
+2. job application folder
+3. user resume draft dropbox
+4. job tracker spreadsheet dropbox
 
 ## Backend
+
+### LLM
+
+Ollama's [`llama3.2:3b`](https://ollama.com/library/llama3.2)
+
+### Vectorstore
+
+`InMemoryVectorStore`
+
+### Embedding model
+
+Ollama's [`llama3.2:3b`](https://ollama.com/library/llama3.2)
+
+## Prompt template
+
+`Langchain Hub` has a collection prompts for community
+
+template used: [`rlm/rag-prompt`](https://smith.langchain.com/hub/rlm/rag-prompt)
 
 An LLM will retrieve inferences from:
 
@@ -69,8 +98,7 @@ An LLM will retrieve inferences from:
 2. user resume draft
 3. common keywords
 
+## Expected output
+
 The expected output is a `text-generation` of resume improvement suggestions.
 
-## Prompt
-
-`Langchain Hub` has a collection prompts for community
