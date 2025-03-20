@@ -16,18 +16,17 @@ Job descriptions are available as web links or pdf print of the job posting webp
 
 ## data available
 
-### Job tracker spreadsheet
-
-job application folder. Each folder contains:
-
-1. Job description pdf (almost all job apping folder have it)
-2. Resume
-
-Job posting webpage (if it is still live)
+1. Job tracker spreadsheet
+2. Job description pdf (almost all job apping folder have it)
+3. Resume
+4. Job posting webpage (if it is still live)
 
 ## RAG application
 
-As a user I would like to input my job descriptions to find common job requirements
+As a user I would like to:
+
+1. input my job descriptions to find common job requirements
+2. Find jobs which are relevant to a set of requirements
 
 ## Frontend
 
@@ -48,3 +47,7 @@ An LLM will retrieve inferences from:
 3. common keywords
 
 The expected output is a `text-generation` of resume improvement suggestions.
+
+## Prompt
+
+`Langchain Hub` has a collection prompts for community
