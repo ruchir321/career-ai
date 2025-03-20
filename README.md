@@ -2,9 +2,31 @@
 
 A LLM app personalized to my job application history.
 
+## How to use
+
+1. Clone repo
+
+```bash
+git clone https://github.com/ruchir321/career-ai.git
+```
+
+2. Create directory `data/sample_jd`
+
+```bash
+mkdir data/sample_jd
+```
+
+1. Put job description pdf's in `data/sample_jd` folder
+
+2. Run streamlit app
+
+```bash
+streamlit run ./src/app/streamlit-app.py
+```
+
 ## Motivation
 
-I have applied to more than 30 applications in the past 20 days.
+I have applied to more than 40 applications in the past 10 days.
 
 The job tracker spreadsheet has job posting link, job tile, referral status and application status.
 
@@ -14,10 +36,10 @@ The app will compare a new job description to old ones to find similarities, whi
 
 Job descriptions are available as web links or pdf print of the job posting webpage.
 
-## data available
+## Data used
 
-1. Job tracker spreadsheet
-2. Job description pdf (almost all job apping folder have it)
+1. Job description pdf (almost all job apping folder have it)
+2. Job tracker spreadsheet
 3. Resume
 4. Job posting webpage (if it is still live)
 
@@ -27,6 +49,7 @@ As a user I would like to:
 
 1. input my job descriptions to find common job requirements
 2. Find jobs which are relevant to a set of requirements
+3. Generate resume suggestions
 
 ## Frontend
 
@@ -42,8 +65,8 @@ UI will have dropbox for:
 
 An LLM will retrieve inferences from:
 
-1. user resume draft
-2. job description
+1. job description
+2. user resume draft
 3. common keywords
 
 The expected output is a `text-generation` of resume improvement suggestions.
